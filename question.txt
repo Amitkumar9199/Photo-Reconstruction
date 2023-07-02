@@ -1,0 +1,122 @@
+General Students,
+Welcome to the photo reconstruction Kaggle challenge. This challenge has been introduced to give you hands-on and practical experience in building and reusing pretrained models on real-world data. You will begin with Data Exploration, move on the Image Augmentation, remove noises, and build or use pre-trained models to generate accurate results.
+
+Each group will be making precisely one submission. Submission will be a single ZIP file named Group_<num>.zip, containing the following segments.
+
+
+	
+Report 
+	
+Code Files
+
+Scoring
+
+
+
+	
+[15 marks] Mid-Eval Report (max. 2 pages)
+	
+[15 marks] Final Report (3-4 pages) - Summarize all your work during the three weeks.
+	
+[15 marks] Well commented Code file / Notebook (make sure you do not submit a dataset or other submission csv)
+	
+[15 marks] Normalized score based on the leaderboard
+	
+
+		
+NOTE that if you place random data, on average, your score will be more than 0.55, which is the benchmark score for the dataset. So if your RMSE score on the dataset is more than 0.55, you will receive 0 marks for this segment. The normalised scoring calculations will include only students scoring < 0.55 RMSE score.
+	
+	
+
+Next Steps
+
+
+
+	
+Create an account on Kaggle if you don't have one
+	
+Join the completion via the link provided below (Do not share the link outside this class)
+	
+Read the instructions carefully. Go through the description, evaluation metrics and dataset.
+	
+Go through the attached recording about the project, how to make teams and make submissions.
+	
+For teams on Kaggle with the team merger ✅ feature (One person creates the team and adds others)
+	
+
+		
+So that you know, individual submissions will not be accepted. Only make submissions after the team merger.
+	
+	
+	
+Train your model using Kaggle Notebooks and Google Colab (Since images are big, you may consider downsizing images or making small batches of images), and make your submissions ✅. (Start early since training and inferencing a huge dataset takes time ⏳)
+
+We will be sharing the link to submit the ZIP file soon.
+15th April 2023, 11:59 PM UTC, is the strict deadline due to the upcoming end-semester exam, so there will not be any extensions
+
+If you have any other questions or doubts, please feel free to contact Me or Somnath Jena.
+
+I hope you enjoy the challenge. All the best 👍
+
+Updates
+
+Regarding Code Submission Guidelines
+
+
+
+	
+Host your model on any free forum like Google Drive, Hugging Face, Kaggle Models or GIT LFS and ensure the link is publicly accessible.
+	
+For training code.
+	
+
+		
+If you are using Jupiter or any other notebook, save the output of each cell and ensure that you log after each epoch of training the accuracy or any other metric you are using.
+		
+If you are using a python script/file-based method for training, include descriptive logs at the critical sections of the code that marks the completion of a stage (like data cleaning, image augmentation etc.) and some statistics, like X_train size, X_valid size Etc. You will also include a log after each training epoch to output the metric value in each epoch. You will be saving this output in a output.logfile, which will be included in the submitted code.
+	
+	
+	
+For inferencing code.
+	
+
+		
+The first step will be to fetch the model from your hosting public form. As for google drive, you can use gdown. Look into the documentation of kaggle models, git lfs and hugging face for more info on how to fetch models hosted on these platforms.
+		
+Following this, write a python script to take the data from --test_path an argument (the mentioned location contains test images) and generate the submission.csv. We will compare this file with the original submission, so make sure you use a fixed seed value in your program for random numbers. Alternatively, you can also write an inference notebook with the exact specification as mentioned; that should take an input, the test path, and generate the submission.csv.
+		
+		NOTE: Your total inference time on 100 images should not exceed 3 hour. We will randomly select 100 images to verify your submission file, and the time to generate submission.csv for 100 images should be within 3 hours. Inferenciing will be run by TAs either on Colab or on Kaggleor on local environment with Python3.9+.
+	
+	
+
+You can look into the following notebook to understand what a well-commented notebook looks like.
+https://www.kaggle.com/code/awsaf49/great-barrier-reef-yolov5-train
+
+Mid Eval Report [15 marks]
+
+Deadline: 4th April 2023, 11:59 PM IST
+
+You will submit a report of maximum of 2 pages (PDF) detailing the following.
+
+
+	
+Description of the data as you understand.
+	
+What data processing you have experimented.
+	
+What model or architecture have you already tried.
+	
+How you are tuning the hyperparameters (look into https://wandb.ai/site).
+	
+Training Loss plots and your interpretation using the same (Look into using Tensorboard).
+	
+The best score you have achieved on the original challenge till now and the scope of improvement.
+	
+Any other point you feel should be included regarding what you have explored.
+
+The link for submission will be enabled soon! 👍
+
+
+
+
+Edited[DL23 Group Mapping.xlsx] (https://iitkgpacin.sharepoint.com/sites/DL23CS60010/Shared Documents/General/DL23 Group Mapping.xlsx)[Photo Reconstruction.mp4] (https://iitkgpacin.sharepoint.com/sites/DL23CS60010/Shared Documents/General/Photo Reconstruction.mp4)<https://teams.microsoft.com/l/message/19:azIeRipdqpNpZrifzqJ-29vpjrHawsfAclRheB86jhU1@thread.tacv2/1679737308334?tenantId=71dbb522-5704-4537-9f25-6ad2dcd4278d&amp;groupId=23825f44-1b9c-42d0-a025-3990d111f022&amp;parentMessageId=1679737308334&amp;teamName=DL23 CS60010&amp;channelName=General&amp;createdTime=1679737308334&amp;allowXTenantAccess=false>
